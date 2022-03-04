@@ -166,6 +166,7 @@ header .navbar .navbar__list{
 #about-us .flex-row{
     justify-content: space-between;
     align-items: center;
+    height: 60vh;
 }
 
 #about-us .flex-row .flex-column{
@@ -178,9 +179,10 @@ header .navbar .navbar__list{
     padding: 2rem;
 }
 
-#about-us .flex-row .about-us__img{
+#about-us .flex-row .about-us__img img{
     flex-basis: 20%;
-    padding: 2rem;
+    padding: 3rem;
+    max-height: 65vh;
 }
 
 /* servicios */
@@ -188,7 +190,7 @@ header .navbar .navbar__list{
 #service{
     background-image: url(../image/foto\ servicios.png);
     background-repeat: none;
-    height: 100vh
+    height: 70vh
 }
 
 #service h2{
@@ -206,7 +208,8 @@ header .navbar .navbar__list{
 }
 
 #service .service__list{
-    list-style-type: circle;
+    justify-content: space-between;
+    list-style-type: none;
     font-size: var(--font-normal);
     padding: 0 3rem;
     margin: 0 2rem;
