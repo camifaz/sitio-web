@@ -266,38 +266,44 @@ header .navbar .navbar__list{
 }
 
 #contact .contact__form .contact__form__name{
-    grid-area: name;
+    grid-area: "name";
 }
 
 #contact .contact__form .contact__form__lastname{
-    grid-area: lastname;
+    grid-area: "lastname";
 }
 
 #contact .contact__form .contact__form__mail{
-    grid-area: mail;
+    grid-area: "mail";
 }
 
 #contact .contact__form .contact__form__text{
-    grid-area: text;
+    grid-area: "text";
 }
 
 #contact .contact__form .contact__form__message{
-    grid-area: message;
+    grid-area: "message";
 }
 
 #contact .contact__form .conact__form__send{
-    grid-area: send;
+    grid-area: "send";
 }
 
 /* footer */
 
 .footer{
     background-color: var(--third);
-    height: 30vh;
+    max-height: 55vh;
 }
  
 .footer .footer__list{
-    padding-left: 3rem;
+    display: grid;
+    grid-template-areas: 
+    "img contact mapa"
+    "derechos derehos derechos";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3rem;
+    padding: 2rem;
 }
 
 .footer ul li{
@@ -306,22 +312,21 @@ header .navbar .navbar__list{
 }
 
 .footer .footer__list .flex-row .footer__list__img{
-    flex-basis: 10%;
-    padding: 3rem;
-    justify-content: space-between;
-    align-items: center;
+    grid-area: "img";
 }
 
 .footer .footer__list .footer__list__description{
-    align-items: flex-start;
-    flex-basis: 70%;
-    font-size: 1.5em;
-    justify-content: space-between;
-    padding: 3rem;
+    grid-area: "contact";
+    font-size: var(--font-normal);
 }
 
 .footer .footer__mapa{
+    grid-area: "mapa";
+}
 
+.footer .footer__derechos{
+    grid-area: "derechos";
+    justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
