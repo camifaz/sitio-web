@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar flex-row container">
+            <picture class="navbar__logo">
+                <a href="#home"><img src="./assets/image/CF.png" alt="logo"></a>
+            </picture>
+            <ul class="navbar__list flex-row">
+                <li class="navbar__item"><a href=#home class="navbar__link">INICIO</a></li>
+                <li class="navbar__item"><a href="#about-us" class="navbar__link">SOBRE MI</a></li>
+                <li class="navbar__item"><a href="#service" class="navbar__link">SERVICIOS</a>
+                <ul class="sub-navbar">
+                    <li class="sub-navbar__item"><a href="./assets/pages/Contabilidad.html" class="sub-navbar__link">CONTABILIDAD</a></li>
+                    <li class="sub-navbar__item"><a href="./assets/pages/Laboral.html" class="sub-navbar__link">LABORAL</a></li>
+                    <li class="sub-navbar__item"><a href="./assets/pages/Impuestos.html" class="sub-navbar__link">IMPUESTOS</a></li>
+                    <li class="sub-navbar__item"><a href="./assets/pages/Asesoramiento.html" class="sub-navbar__link">ASESORAMIENTO</a></li>
+                </ul></li>
+                <li class="navbar__item"><a href="#news" class="navbar__link">NOVEDADES</a></li>
+                <li class="navbar__item"><a href="#contact" class="navbar__link">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="home__description">
+                <p class="home__title">ESTUDIO CONTABLE IMPOSITIVO</p>
+                <p class="home__article">Bienvenidos. Brindamos servicio de asesoramiento contable e impositivo para cada tipo de necesidades de nuestros clientes. No dudes en contactarnos.</p>
+            </div>
+            <picture class="home__img">
+                <img src="./assets/image/foto inicio.png" alt="">
+            </picture>
+        </section>
+        <section id="about-us">
+            <h2>SOBRE MI</h2>
+            <div class="flex-row">
+                <div class="flex-column">
+                    <p class="about-us__title">
+                        CAMILA FAZZI
+                    </p>
+                    <p class="about-us__description">
+                        CONTADORA PÚBLICA
+                    </p>
+                    <p class="about-us__article">
+                        En Estudio Contable CF usted recibirá el Asesoramiento Profesional de Camila Fazzi. Contadora Pública, egresado de la Universidad Nacional del Noroeste de la Provincia de Buenos Aires, Matriculado en el Consejo Profesional de Ciencias Económicas de la Provincia de Buenos Aires.
+                        Hoy en día Estudio Contable CF cuenta con una amplia cartera de Unipersonales y PYMES.
+                        Hemos decidido incluir el servicio de Asesoramiento Profesional "a distancia", debido a la solicitud que se planteaba con clientes potenciales que requerían nuestros Servicios Profesionales, debido a que las distancias con las provincias donde llevan adelante sus proyectos complicaban el Asesoramiento " in situ" de sus operaciones cotidianas.
+                    </p>
+                </div>
+                <picture class="about-us__img">
+                    <img src="./assets/image/foto profesional.jpg"alt="" srcset="">
+                </picture>
+            </div>
+        </section>   
+        <section id="service">
+            <div>
+                <h2>SERVICIOS</h2>
+                <ul class="service__list">
+                    <li class="service__item"><a href="./assets/pages/Contabilidad.html" class="service__link">CONTABILIDAD</a> 
+                    <li class="service__item"><a href="./assets/pages/Laboral.html" class="service__link">LABORAL</a>
+                    <li class="service__item"><a href="./assets/pages/Impuestos.html" class="service__link">IMPUESTOS</a>
+                    <li class="service__item"><a href="./assets/pages/Asesoramiento.html" class="service__link">ASESORAMIENTO</a>
+                </ul>
+            </div>
+       </section>
+       <section id="news">
+            <h2>NOVEDADES</h2> 
+            <div class="flex-row">
+                <article class="news__description flex-column">
+                    <p>NOTICIAS</p>
+                    <p>AFIP: AUMENTARON LOS IMPORTES DEL MONOTRIBUTO</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quia sequi. Id tenetur maxime voluptate commodi doloremque nostrum iure enim. Ipsa minus sapiente aperiam necessitatibus, porro vero autem officia odit.</p>
+                    <p>EL NUEVO REGIMEN SIMPLIFICADO DE IIBB SERÁ OBLIGATORIO PARA LOSNUEVOS CONTRIBUYENTES</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem tempora error, labore atque suscipit rerum? Voluptatem soluta eaque aliquid iure. Ipsum totam magnam, sequi minima quisquam sapiente distinctio consequuntur eos?</p>
+                </article>
+                <div class="news__img flex-column">
+                    <picture>
+                        <img src="./assets/image/foto novedades.png" alt="" srcset="" class="news__img__1">
+                    </picture>
+                    <picture>
+                        <img src="./assets/image/foto novedades.png" alt="" srcset="" class="news__img__2">
+                    </picture>
+                </div>
+            </div> 
+       </section>
+       <section id="contact">
+           <h2>CONTACTO</h2>
+            <p class="contact__title">ESCRíBANOS Y NOS CONTACTEREMOS CON USTED A LA BREVEDAD</p>
+            <form action="get" class="contact__form">
+                <input type="text" name="Nombre" id="" placeholder="Nombre..." class="contact__form__name">
+                <input type="text" name="Apellido" id="" placeholder="Apellido..." class="contact__form__lastname">
+                <input type="email" name="Email" id="" placeholder="Email..." class="contact__form__mail">
+                <input type="text" name="Asunto" id="" placeholder="Asunto..." class="contact__form__text">
+                <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Mensaje..."></textarea class="contact__form__menssage">
+                <input type="submit" value="ENVIAR" class="contact__form__send">
+            </form>
+       </section>
+    </main>
+    <footer class="footer">
+        <nav>
+            <section>
+                <div class="footer__list flex-row">
+                    <ul class="footer__list__img flex-column">
+                        <li class="footer__list__img--mail"><img src="./assets/image/bxl-gmail 1.png" alt="mail" srcset=""></a></li>
+                        <li class="footer__list__img--linkedin"> <img src="./assets/image/bxl-linkedin-square 1.png" alt="linkedin" srcset=""></li>
+                        <li class="footer__list__img--wsp"><img src="./assets/image/bxl-whatsapp 2.png" alt="wsp" srcset=""></li>
+                    </ul>
+                    <ul class="footer__list__description flex-column">
+                        <li class="footer__list__description--mail"><a href="mailto:fazzicamila1@gmail.com">fazzicamila1@gmail.com</a></li>
+                        <li class="footer__list__description--linkedin"><a href="http://www.linkedin.com/in/camila-fazzi/"> LinkedIn</a></li>
+                        <li class="footer__list__description--wsp"><a href="https://wa.me/5492477689157">+54 9 2477 689157</a></li>
+                    </ul>
+                    <div class="footer__mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1656.1935107013285!2d-60.56605714198612!3d-33.879685068365134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b9caa476b3cacd%3A0x85f2ad378ac7d10!2sInterna%20Douglas%2C%20Pergamino%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646256053690!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section> 
+        </nav>
+    </footer>
+</body>
+</html>
