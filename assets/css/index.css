@@ -221,6 +221,7 @@ header .navbar .navbar__list{
 #news .flex-row{
     justify-content: space-between;
     align-items: center;
+    height: 65vh;
 }
 
 #news h2{
@@ -233,10 +234,18 @@ header .navbar .navbar__list{
     font-size: var(--font-normal);
 }
 
-#news .flex-row .news__imgs{
-    justify-content: space-between;
+#news .flex-row .news__description p{
+    padding: 1rem;
+}
+
+#news .flex-row .news__img{
     align-items: center;
     padding: 3rem;
+}
+
+#news .flex-row .news__img img{
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 /* contacto */
@@ -338,6 +347,5 @@ header .navbar .navbar__list{
         min-height: 60rem;
     }
 }
-
 
 
