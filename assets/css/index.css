@@ -8,7 +8,7 @@
     --principal: rgb(255, 255, 255);
     --secondary: #110f0f;
     --third: rgba(201, 201, 201, 0.425);
-    --four: #aeadff; 
+    --four: #9c9aff; 
     --font-primary: "Monserrat", sans-serif;
     --font-secondary: "display", sans-serif;
     --font-title: 3.5em;
@@ -36,6 +36,12 @@ a{
     text-decoration: none;
     color: var(--secondary);
     display: inline-block;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100%;
 }
 
 /* Helpers */
@@ -109,18 +115,18 @@ header .navbar .navbar__list{
     list-style-type: none;
 }
 
-.navbar .navbar__list .navbar__item:hover {
+.navbar .navbar__list .navbar__item a:hover {
     border-bottom: 0.1rem solid var(--four);
-    color: var(--third);
-    font-size: 1.9em;
+    color: var(--four);
 }
 
 .navbar .navbar__list .navbar__item:hover .sub-navbar{
     display: block;
+    font-size: 1.1em;
 }
 
-.navbar .navbar__list .navbar__item .sub-navbar .sub-navbar__item:hover{
-    background-color: var(--four);
+.navbar .navbar__list .navbar__item .sub-navbar .sub-navbar__item a:hover{
+    color: var(--four);
 }
 
 /* home */
@@ -208,11 +214,21 @@ header .navbar .navbar__list{
 }
 
 #service .service__list{
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
     font-size: var(--font-normal);
     padding: 0 3rem;
-    margin: 0 2rem;
+}
+
+#service .service__img{
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0 3rem;
+    height: 40vh;
+}
+
+#service .service__img img{
+    width: 11rem; 
 }
  
 #service .service__list .service__link{
@@ -273,7 +289,8 @@ header .navbar .navbar__list{
     grid-template-rows: 20% 20% 40% 20%;
     grid-template-columns: 30% 30%;
     padding: 3rem;
-    height: 200px;
+    min-height: 60vh;
+    min-width: 100vh;
     grid-gap: 1rem;
 }
 
@@ -309,13 +326,7 @@ header .navbar .navbar__list{
 }
  
 .footer .footer__list{
-    display: grid;
-    grid-template-areas: 
-    "img contact mapa"
-    "derechos derehos derechos";
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 3rem;
-    padding: 2rem;
+    justify-content: space-evenly;
 }
 
 .footer ul li{
@@ -323,31 +334,51 @@ header .navbar .navbar__list{
     list-style: none;
 }
 
-.footer .footer__list .flex-row .footer__list__img{
-    grid-area: "img";
-}
-
-.footer .footer__list .footer__list__description{
-    grid-area: "contact";
-    font-size: var(--font-normal);
-}
-
-.footer .footer__mapa{
-    grid-area: "mapa";
-}
-
 .footer .footer__derechos{
-    grid-area: "derechos";
-    justify-content: center;
+    padding-top: 18rem;
 }
 
-@media screen and (min-width: 768px) {
-    .contain{
+@media screen and (max-width: 798px) {
+    .container{
         flex-wrap: wrap;
     }
     
     #home .home__img img{
-        min-height: 60rem;
+        min-height: 80rem;
+        width: 100%;
+    }
+
+    #about-us .flex-row .flex-column p{
+        font-size: 1.2em;
+        padding: 0;
+    }
+
+    #home .home__description{
+        position: absolute;
+        background-color: var(--third);
+        margin: 70vh 0 60vh 0;
+        padding: 3rem;
+        width: 100%;
+    }
+
+    #service .service__list{
+        font-size: 1.5em;
+        padding: 0 3rem;
+    }
+    
+    #news .flex-row .news__description{
+        padding-left: 0.5;
+        font-size: 1.5em;
+        width: 85vh;
+    }
+    
+    #news .flex-row .news__description p{
+        padding: 0;
+    }
+
+    #news .flex-row .news__img{
+        padding: 3rem;
+        width: 10vh
     }
 }
 
