@@ -354,8 +354,6 @@ header .navbar .navbar__list{
     }
 
     #home .home__description{
-        position: absolute;
-        background-color: var(--third);
         margin: 70vh 0 60vh 0;
         padding: 3rem;
         width: 100%;
