@@ -8,7 +8,7 @@
     --principal: rgb(255, 255, 255);
     --secondary: #110f0f;
     --third: rgba(201, 201, 201, 0.425);
-    --four: #aeadff; 
+    --four: #9c9aff; 
     --font-primary: "Monserrat", sans-serif;
     --font-secondary: "display", sans-serif;
     --font-title: 3.5em;
@@ -36,6 +36,12 @@ a{
     text-decoration: none;
     color: var(--secondary);
     display: inline-block;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100%;
 }
 
 /* Helpers */
@@ -109,18 +115,18 @@ header .navbar .navbar__list{
     list-style-type: none;
 }
 
-.navbar .navbar__list .navbar__item:hover {
+.navbar .navbar__list .navbar__item a:hover {
     border-bottom: 0.1rem solid var(--four);
-    color: var(--third);
-    font-size: 1.9em;
+    color: var(--four);
 }
 
 .navbar .navbar__list .navbar__item:hover .sub-navbar{
     display: block;
+    font-size: 1.1em;
 }
 
-.navbar .navbar__list .navbar__item .sub-navbar .sub-navbar__item:hover{
-    background-color: var(--four);
+.navbar .navbar__list .navbar__item .sub-navbar .sub-navbar__item a:hover{
+    color: var(--four);
 }
 
 /* home */
@@ -166,6 +172,7 @@ header .navbar .navbar__list{
 #about-us .flex-row{
     justify-content: space-between;
     align-items: center;
+    height: 60vh;
 }
 
 #about-us .flex-row .flex-column{
@@ -178,9 +185,10 @@ header .navbar .navbar__list{
     padding: 2rem;
 }
 
-#about-us .flex-row .about-us__img{
+#about-us .flex-row .about-us__img img{
     flex-basis: 20%;
-    padding: 2rem;
+    padding: 3rem;
+    max-height: 65vh;
 }
 
 /* servicios */
@@ -188,7 +196,7 @@ header .navbar .navbar__list{
 #service{
     background-image: url(../image/foto\ servicios.png);
     background-repeat: none;
-    height: 100vh
+    height: 70vh
 }
 
 #service h2{
@@ -206,10 +214,21 @@ header .navbar .navbar__list{
 }
 
 #service .service__list{
-    list-style-type: circle;
+    justify-content: space-around;
+    list-style-type: none;
     font-size: var(--font-normal);
     padding: 0 3rem;
-    margin: 0 2rem;
+}
+
+#service .service__img{
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0 3rem;
+    height: 40vh;
+}
+
+#service .service__img img{
+    width: 11rem; 
 }
  
 #service .service__list .service__link{
@@ -221,6 +240,7 @@ header .navbar .navbar__list{
 #news .flex-row{
     justify-content: space-between;
     align-items: center;
+    height: 65vh;
 }
 
 #news h2{
@@ -233,10 +253,18 @@ header .navbar .navbar__list{
     font-size: var(--font-normal);
 }
 
-#news .flex-row .news__imgs{
-    justify-content: space-between;
+#news .flex-row .news__description p{
+    padding: 1rem;
+}
+
+#news .flex-row .news__img{
     align-items: center;
     padding: 3rem;
+}
+
+#news .flex-row .news__img img{
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 /* contacto */
@@ -261,43 +289,44 @@ header .navbar .navbar__list{
     grid-template-rows: 20% 20% 40% 20%;
     grid-template-columns: 30% 30%;
     padding: 3rem;
-    height: 200px;
+    min-height: 60vh;
+    min-width: 100vh;
     grid-gap: 1rem;
 }
 
 #contact .contact__form .contact__form__name{
-    grid-area: name;
+    grid-area: "name";
 }
 
 #contact .contact__form .contact__form__lastname{
-    grid-area: lastname;
+    grid-area: "lastname";
 }
 
 #contact .contact__form .contact__form__mail{
-    grid-area: mail;
+    grid-area: "mail";
 }
 
 #contact .contact__form .contact__form__text{
-    grid-area: text;
+    grid-area: "text";
 }
 
 #contact .contact__form .contact__form__message{
-    grid-area: message;
+    grid-area: "message";
 }
 
 #contact .contact__form .conact__form__send{
-    grid-area: send;
+    grid-area: "send";
 }
 
 /* footer */
 
 .footer{
     background-color: var(--third);
-    height: 30vh;
+    max-height: 55vh;
 }
  
 .footer .footer__list{
-    padding-left: 3rem;
+    justify-content: space-evenly;
 }
 
 .footer ul li{
@@ -305,34 +334,52 @@ header .navbar .navbar__list{
     list-style: none;
 }
 
-.footer .footer__list .flex-row .footer__list__img{
-    flex-basis: 10%;
-    padding: 3rem;
-    justify-content: space-between;
-    align-items: center;
+.footer .footer__derechos{
+    padding-top: 18rem;
 }
 
-.footer .footer__list .footer__list__description{
-    align-items: flex-start;
-    flex-basis: 70%;
-    font-size: 1.5em;
-    justify-content: space-between;
-    padding: 3rem;
-}
-
-.footer .footer__mapa{
-
-}
-
-@media screen and (min-width: 768px) {
-    .contain{
+@media screen and (max-width: 798px) {
+    .container{
         flex-wrap: wrap;
     }
     
     #home .home__img img{
-        min-height: 60rem;
+        min-height: 80rem;
+        width: 100%;
+    }
+
+    #about-us .flex-row .flex-column p{
+        font-size: 1.2em;
+        padding: 0;
+    }
+
+    #home .home__description{
+        position: absolute;
+        background-color: var(--third);
+        margin: 70vh 0 60vh 0;
+        padding: 3rem;
+        width: 100%;
+    }
+
+    #service .service__list {
+        font-size: 1.5em;
+        padding: 0 3rem;
+    }
+    
+    #news .flex-row .news__description{
+        padding-left: 0.5;
+        font-size: 1.5em;
+        width: 85vh;
+    }
+    
+    #news .flex-row .news__description p{
+        padding: 0;
+    }
+
+    #news .flex-row .news__img{
+        padding: 3rem;
+        width: 10vh
     }
 }
-
 
 
