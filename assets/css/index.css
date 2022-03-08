@@ -196,7 +196,7 @@ header .navbar .navbar__list{
 #service{
     background-image: url(../image/foto\ servicios.png);
     background-repeat: none;
-    height: 70vh
+    height: 100vh
 }
 
 #service h2{
