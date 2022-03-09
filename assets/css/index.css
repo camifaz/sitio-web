@@ -284,9 +284,8 @@ header .navbar .navbar__list{
     grid-template-areas: 
     "name lastname"
     "mail text"
-    "message massage"
-    "none send";
-    grid-template-rows: 20% 20% 40% 20%;
+    "message massage";
+    grid-template-rows: 20% 20% 40%;
     grid-template-columns: 30% 30%;
     padding: 3rem;
     min-height: 60vh;
@@ -315,7 +314,10 @@ header .navbar .navbar__list{
 }
 
 #contact .contact__form .conact__form__send{
-    grid-area: "send";
+    display: flex; 
+    justify-content: center; 
+    height: 30%; 
+    align-self: center;
 }
 
 /* footer */
