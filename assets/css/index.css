@@ -1,6 +1,6 @@
 /* Imports */
 
-@import url('https://fonts.googleapis.com/css2? family= Montserrat & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Maven+Pro:wght@500 & display=swap');
 
 /* Variables */
 
@@ -9,8 +9,7 @@
     --secondary: #110f0f;
     --third: rgba(201, 201, 201, 0.425);
     --four: #9c9aff; 
-    --font-primary: "Monserrat", sans-serif;
-    --font-secondary: "display", sans-serif;
+    --font-primary: 'Maven Pro', sans-serif;
     --font-title: 3.5em;
     --font-normal: 1.8em;
 }
@@ -116,7 +115,6 @@ header .navbar .navbar__list{
 }
 
 .navbar .navbar__list .navbar__item a:hover {
-    border-bottom: 0.1rem solid var(--four);
     color: var(--four);
 }
 
@@ -285,32 +283,32 @@ header .navbar .navbar__list{
     "name lastname"
     "mail text"
     "message massage";
-    grid-template-rows: 20% 20% 40%;
+    grid-template-rows: 15% 15% 60%;
     grid-template-columns: 30% 30%;
     padding: 3rem;
-    min-height: 60vh;
+    min-height: 50vh;
     min-width: 100vh;
     grid-gap: 1rem;
 }
 
 #contact .contact__form .contact__form__name{
-    grid-area: "name";
+    grid-area: name;
 }
 
 #contact .contact__form .contact__form__lastname{
-    grid-area: "lastname";
+    grid-area: lastname;
 }
 
 #contact .contact__form .contact__form__mail{
-    grid-area: "mail";
+    grid-area: mail;
 }
 
 #contact .contact__form .contact__form__text{
-    grid-area: "text";
+    grid-area: text;
 }
 
 #contact .contact__form .contact__form__message{
-    grid-area: "message";
+    grid-area: message;
 }
 
 #contact .contact__form .conact__form__send{
