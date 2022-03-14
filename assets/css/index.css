@@ -180,7 +180,7 @@ header .navbar .navbar__list{
 
 #about-us .flex-row .flex-column p{
     font-size: var(--font-normal);
-    padding: 2rem;
+    padding: 1rem;
 }
 
 #about-us .flex-row .about-us__img img{
@@ -193,7 +193,7 @@ header .navbar .navbar__list{
 
 #service{
     background-image: url(../image/foto\ servicios.png);
-    background-repeat: none;
+    background-repeat: no-repeat;
     height: 90vh
 }
 
@@ -239,11 +239,17 @@ header .navbar .navbar__list{
     justify-content: space-between;
     align-items: center;
     height: 65vh;
+    padding: 0 5rem;
 }
 
 #news h2{
     font-size: var(--font-title);
     padding: 3rem;
+}
+
+.news__description a{
+    font-style: italic;
+    border-bottom: 00.5rem solid var(--four);
 }
 
 #news .flex-row .news__description{
@@ -255,14 +261,18 @@ header .navbar .navbar__list{
     padding: 1rem;
 }
 
+#news .flex-row .news__description article{
+    padding: 2rem;
+}
+
 #news .flex-row .news__img{
-    align-items: center;
-    padding: 3rem;
+    height: 60vh;
 }
 
 #news .flex-row .news__img img{
     justify-content: space-between;
     padding: 1rem;
+    height: 30vh;
 }
 
 /* contacto */
