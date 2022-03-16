@@ -209,6 +209,8 @@ header .navbar .navbar__list{
 
 #service .service__title{
     padding-top: 25vh;
+    width: 1080px;
+    margin: 0 auto;
 }
 
 #service .service__items{
@@ -234,6 +236,12 @@ header .navbar .navbar__list{
 
 #service .service__img img{
     width: 11rem; 
+}
+
+#service .service__img img:hover{
+    border: 0.3rem solid var(--four);
+    padding: 1rem;
+    
 }
  
 #service .service__list .service__link{
@@ -331,7 +339,6 @@ header .navbar .navbar__list{
 #contact .contact__form .conact__form__send{
     display: flex; 
     justify-content: center; 
-    height: 30%; 
     align-self: center;
 }
 
