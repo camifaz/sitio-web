@@ -144,10 +144,11 @@ header .navbar .navbar__list{
 #home .home__img{
     position: relative;
     opacity: 0.6;
+    width: 100%;
 }
 
 #home .home__img img{
-    object-fit: none;
+    /* object-fit: none; */
     width: 100%;
 }
 
@@ -199,7 +200,7 @@ header .navbar .navbar__list{
 #service{
     background-image: url(../image/foto\ servicios.png);
     background-repeat: no-repeat;
-    height: 90vh
+    height: 70vh
 }
 
 #service h2{
@@ -363,13 +364,14 @@ header .navbar .navbar__list{
 }
 
 @media screen and (max-width: 798px) {
+
     .container{
         flex-wrap: wrap;
     }
-    
-    #home .home__img img{
-        min-height: 80rem;
-        width: 100%;
+
+    .home__img img{
+        height: 100vh;
+        object-fit: none;
     }
 
     #about-us .flex-row .flex-column p{
@@ -387,9 +389,22 @@ header .navbar .navbar__list{
         font-size: 1.5em;
         padding: 0 3rem;
     }
+
+    #service .service__items{
+        font-size: 1.1em;
+        padding-top: 0;
+    }
+
+    #service .service__title{
+        padding-top: 38vh;
+    }
     
+    #news .container{
+        width: 100%;
+        flex-wrap: none;
+    }
+
     #news .flex-row .news__description{
-        padding-left: 0.5;
         font-size: 1.5em;
         width: 85vh;
     }
@@ -403,14 +418,22 @@ header .navbar .navbar__list{
         width: 10vh
     }
 
-    #service .service__items{
-        font-size: 1.1em;
-        padding-top: 0;
+    #contact .contact__form{
+        display: grid; 
+        grid-template-areas: 
+        "name"
+        "lastname"
+        "mail" 
+        "text"
+        "message";
+        grid-template-rows: repeat(4, 0.5fr) 1.5fr;
+        grid-template-columns: 80%;
+        padding: 3rem;
+        min-height: 100%;
+        min-width: 100vh;
+        grid-gap: 0.5rem;
     }
 
-    #service .service__title{
-        padding-top: 38vh;
-    }
 }
 
 
