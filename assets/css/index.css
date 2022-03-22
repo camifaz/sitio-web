@@ -351,7 +351,7 @@ header .navbar .navbar__list{
 }
  
 .footer .footer__list{
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .footer ul li{
