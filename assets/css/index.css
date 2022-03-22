@@ -32,8 +32,8 @@ html{
 }
 
 a{
-    text-decoration: none  !important; 
-    color: var(--secondary) !important;
+    text-decoration: none; 
+    color: var(--secondary);
     display: inline-block;
 }
 
@@ -82,8 +82,8 @@ header .navbar__logo a{
 }
 
 header .navbar__logo a:hover{
-    padding: 0 0.5rem !important;
-    border: 0.1rem solid var(--secondary) !important;
+    padding: 0 0.5rem;
+    border: 0.1rem solid var(--secondary);
 }
 
 header .navbar .navbar__list{
@@ -115,7 +115,7 @@ header .navbar .navbar__list{
 }
 
 .navbar .navbar__list .navbar__item a:hover {
-    color: var(--four) !important;
+    color: var(--four);
 }
 
 .navbar .navbar__list .navbar__item:hover .sub-navbar{
