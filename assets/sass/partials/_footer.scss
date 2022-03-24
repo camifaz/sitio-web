@@ -1,0 +1,20 @@
+/* footer */
+
+.footer{
+    background-color: $third;
+    max-height: 55vh;
+
+    .footer__list{
+        justify-content: space-between;
+    }
+    
+    ul li{
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .footer__derechos{
+        padding-top: 18rem;
+    }
+}
+ 

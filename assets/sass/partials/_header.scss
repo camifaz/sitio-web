@@ -1,0 +1,76 @@
+/* header & navbar */
+
+header{
+    background-color: $principal;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    .navbar{
+        min-width: 10hv;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+
+        .navbar__logo a{
+            flex-basis: 30%;
+            transition: border 0.3s;
+        }
+    
+        .navbar__logo a:hover{
+            padding: 0 0.5rem;
+            border: 0.1rem solid $secondary;
+        }
+    
+        .navbar__list{
+            flex-basis: 60%;
+            position: relative;
+            justify-content: space-between;
+
+            .navbar__item{
+                padding: 1rem;
+                font-size: $font-normal;
+                transition: background-color 1s;
+                list-style-type: none;
+            }
+
+            .navbar__item a:hover {
+                color: $four;
+            }
+            
+            .navbar__item:hover .sub-navbar{
+                display: block;
+                font-size: 1.1em;
+            }
+        }
+
+        .sub-navbar{
+            display: none;
+            position: absolute;
+            background-color: $principal;
+            color: $secondary;
+            padding: 1rem;
+            
+            .sub-navbar__item{
+                padding: 1rem;
+                font-size: 0.8em;
+                transition: border 1s;
+                list-style-type: none;
+            }
+
+            .sub-navbar__item a:hover{
+                color: $four;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
