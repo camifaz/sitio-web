@@ -104,7 +104,7 @@ header {
   #home .home__description {
     position: absolute;
     background-color: rgba(201, 201, 201, 0.425);
-    margin: 60vh 12vh 60vh 12vh;
+    margin: 60vh 25vh;
     padding: 3rem;
     width: 55rem; }
     #home .home__description .home__title {
