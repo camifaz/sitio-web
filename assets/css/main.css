@@ -134,9 +134,15 @@ header {
   #about-us .flex-row .flex-column {
     flex-basis: 80%;
     padding: 2rem; }
-  #about-us .flex-row p {
-    font-size: 1.8em;
-    padding: 1rem; }
+    #about-us .flex-row .flex-column .about-us__title {
+      font-size: 3.5em;
+      font-style: oblique; }
+    #about-us .flex-row .flex-column .about-us__description {
+      border-bottom: solid 0.5rem #9c9aff;
+      font-size: 1.8em; }
+    #about-us .flex-row .flex-column .about-us__article {
+      font-size: 1.8em;
+      padding: 1rem; }
   #about-us .flex-row .about-us__img img {
     flex-basis: 20%;
     padding: 3rem;

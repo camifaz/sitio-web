@@ -50,11 +50,22 @@
         .flex-column{
             flex-basis: 80%;
             padding: 2rem;
-        }
-        
-        p{
-            font-size: $font-normal;
-            padding: 1rem;
+
+            .about-us__title{
+                font-size: 3.5em;
+                font-style: oblique;
+            }
+
+            .about-us__description{
+                border-bottom: solid 0.5rem $four;
+                font-size: $font-normal;
+            }
+
+            .about-us__article{
+                font-size: $font-normal;
+                padding: 1rem;
+            }
+            
         }
         
         .about-us__img img{
