@@ -1,6 +1,14 @@
 /* Helpers */
 
-.flex-row{
+@mixin flex($direction, $justify, $aling, $gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+    gap: $gap;
+}
+
+/*.flex-row{
     display: flex;
     align-items: center;
 }
@@ -9,6 +17,7 @@
     display: flex;
     flex-direction: column;
 }
+*/
 
 .container{
     max-width: 1080px;

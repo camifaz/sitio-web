@@ -8,9 +8,11 @@ header{
 
     .navbar{
         min-width: 10hv;
-        justify-content: space-between;
+        /*justify-content: space-between;
         align-items: center;
-        padding: 0 2rem;
+        padding: 0 2rem;*/
+
+        @include flex(row, space-between, center, 2rem);
 
         .navbar__logo a{
             flex-basis: 30%;
@@ -25,10 +27,11 @@ header{
         .navbar__list{
             flex-basis: 60%;
             position: relative;
-            justify-content: space-between;
+            /*justify-content: space-between;*/
+
+            @include flex(row, space-between, center, 2rem);
 
             .navbar__item{
-                padding: 1rem;
                 font-size: $font-normal;
                 transition: background-color 1s;
                 list-style-type: none;

@@ -5,9 +5,17 @@
     max-height: 55vh;
 
     .footer__list{
-        justify-content: space-between;
+        @include flex(row, space-between, center, 2rem);
     }
     
+    .footer__navbar{
+        @include flex(column, space-between, center, 2rem);
+    }
+
+    .footer__contact{
+        @include flex(row, space-between, center, 2rem);
+    }
+
     ul li{
         text-decoration: none;
         list-style: none;
@@ -15,6 +23,7 @@
     
     .footer__derechos{
         padding-top: 18rem;
+        padding-left: 4rem;
     }
 }
  
