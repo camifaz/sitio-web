@@ -29,7 +29,7 @@ header{
             position: relative;
             /*justify-content: space-between;*/
 
-            @include flex(row, space-between, center, 2rem);
+            @include flex(row, space-around, center, 1rem);
 
             .navbar__item{
                 font-size: $font-normal;
@@ -65,10 +65,6 @@ header{
                 color: $four;
             }
         }
-    }
-
-    @media screen and (max-width: 768) {
-        flex-wrap: wrap;     
     }
 }
 

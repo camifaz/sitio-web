@@ -78,28 +78,28 @@
 
 #service{
     height: 70vh;
+    background-color: $third;
+    margin-bottom: 2rem;
 
-    .service__background{
-        position: absolute;
-        img{
+    // .service__background{ 
+    //     position: absolute;
+    //     height: 100px;
+    //     width: 100%;
 
-            max-width: fit-content;
-            height: 90vh;
-            width: max-content;
-        }
-    }
+        // img{
+        //     opacity: 0.4;
+        // }
+    
 
     h2{
         font-size: $font-title;
         padding: 3rem;
-        position: absolute;
     }
     
     .service__title{
         padding-top: 25vh;
         width: 1080px;
         margin: 0 auto;
-        position: absolute;
     }
     
     .service__items{
@@ -107,14 +107,12 @@
         padding: 2rem;
         width: 1080px;
         margin: 0 auto;
-        position: absolute;
     }
     
     .service__list{
         @include flex(row, space-around, center, 3rem);
         list-style-type: none;
         font-size: $font-normal;
-        position: absolute;
 
         .service__link{
             line-height: 4rem;
@@ -125,7 +123,6 @@
         @include flex(row, space-around, center, 3rem);
         list-style-type: none;
         height: 40vh;
-        position: absolute;
 
         img{
             width: 11rem; 
@@ -235,7 +232,7 @@
     }    
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     .container{
         flex-wrap: wrap;
