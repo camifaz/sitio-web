@@ -77,19 +77,29 @@
 /* servicios */
 
 #service{
-    background-image: url(../../image/servicios.png);
-    background-repeat: no-repeat;
     height: 70vh;
+
+    .service__background{
+        position: absolute;
+        img{
+
+            max-width: fit-content;
+            height: 90vh;
+            width: max-content;
+        }
+    }
 
     h2{
         font-size: $font-title;
         padding: 3rem;
+        position: absolute;
     }
     
     .service__title{
         padding-top: 25vh;
         width: 1080px;
         margin: 0 auto;
+        position: absolute;
     }
     
     .service__items{
@@ -97,12 +107,14 @@
         padding: 2rem;
         width: 1080px;
         margin: 0 auto;
+        position: absolute;
     }
     
     .service__list{
         @include flex(row, space-around, center, 3rem);
         list-style-type: none;
         font-size: $font-normal;
+        position: absolute;
 
         .service__link{
             line-height: 4rem;
@@ -113,6 +125,7 @@
         @include flex(row, space-around, center, 3rem);
         list-style-type: none;
         height: 40vh;
+        position: absolute;
 
         img{
             width: 11rem; 
@@ -222,26 +235,25 @@
     }    
 }
 
-@media screen and (max-width: 798px) {
+@media screen and (max-width: 767px) {
 
     .container{
         flex-wrap: wrap;
     }
 
     .home__img img{
-        height: 100vh;
+        height: 150vh;
         object-fit: none;
+    }
+
+    #home .home__description{
+        width: 100%;
+        position: relative;
     }
 
     #about-us .flex-row .flex-column p{
         font-size: 1.2em;
         padding: 0;
-    }
-
-    #home .home__description{
-        margin: 70vh 0 60vh 0;
-        padding: 3rem;
-        width: 100%;
     }
 
     #service .service__list{
@@ -291,6 +303,7 @@
         min-height: 100%;
         min-width: 100vh;
         grid-gap: 0.5rem;
+        float: inline-end;
     }
 
 }

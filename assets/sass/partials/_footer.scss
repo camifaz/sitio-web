@@ -25,5 +25,10 @@
         padding-top: 18rem;
         padding-left: 4rem;
     }
+
+    @media screen and (max-width: 768){
+        vertical-align: baseline;
+        flex-wrap: wrap;
+    }
 }
  

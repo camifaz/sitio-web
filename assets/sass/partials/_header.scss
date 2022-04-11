@@ -66,6 +66,10 @@ header{
             }
         }
     }
+
+    @media screen and (max-width: 768) {
+        flex-wrap: wrap;     
+    }
 }
 
 
